@@ -45,6 +45,9 @@ var matches = [
     "\"i like to quote\" but i want to go vegan and \"stuff\"",
     "i'm planning on going vegan",
     "i'm totally thinking about becoming a vegan",
+    "i want to try and go vegan",
+    "i wanna try being vegan",
+    "i would like to try and be a vegan",
 ];
 
 var falsePositives = [

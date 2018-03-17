@@ -7,7 +7,7 @@ track("vegan");
 var adverbs = [
     'really', 'totally', 'probably', 'defin[ia]tely', 'absolutely', 'actually',
     'certainly', 'literally', 'legitimately', 'genuinely', 'honestly', 'truly',
-    'undoubtedly', 'unquestionably'
+    'undoubtedly', 'unquestionably', 'seriously', 'rly'
 ];
 var adverbsRegexSet = adverbs.join('|');
 
@@ -18,7 +18,7 @@ var recidivismAdjectivesRegexSet = recidivismAdjectives.join('|');
 
 module.exports = [
     regex( "help me (be( a)?|become( a)?|go) #?vegan" ),
-    regex( "i (" + adverbsRegexSet + ")? ?(want to|wanna|would like to) (be( a)?|become( a)?|go) #?vegan" ),
+    regex( "i (" + adverbsRegexSet + ")? ?(want to|wanna|would like to)( try( to| and|))? (be( a)?|become( a)?|go|being) #?vegan" ),
     // forcing this to be at the start of the tweet is a simple hack for excluding things like "don't tell me I should go vegan"
     regex( "^(i think)? ?i (" + adverbsRegexSet + ")? ?(should) (go|be) #?vegan" ),
     regex( "i (" + adverbsRegexSet + ")? ?(will|do)? ?(need|want) help (going|becoming( a)?|being( a)?|staying( a)?) #?vegan" ),
